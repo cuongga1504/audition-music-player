@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tbm-cassette-player"
+version = "1.0.0"
+description = "Offline Qt Quick cassette player for Audition TBM audio"
+requires-python = ">=3.12"
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+include = ["app*"]
+
+[tool.setuptools]
+py-modules = ["main", "player", "tbm_decoder", "audio_utils"]
+
+[tool.ruff]
+target-version = "py312"

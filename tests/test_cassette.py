@@ -183,6 +183,50 @@ class ApplicationTests(unittest.TestCase):
         self.assertFalse(self.transport.loads)
         self.assertIsNone(self.player.process)
 
+    def test_library_path_alias_updates_favorite_current_and_removes_database_row(self):
+        source = Path(self.temp.name, 'song.tbm')
+        source.write_bytes(b'original source')
+        nested = Path(self.temp.name, 'nested')
+        nested.mkdir()
+        alias = os.path.join(str(nested), '..', source.name)
+        self.library.scan([self.temp.name])
+        self.assertTrue(until(lambda: self.library.model.rowCount() == 1))
+        self.lib_vm.toggleFavorites()
+        self.library.favorite(alias)
+        self.assertEqual(self.library.proxy.rowCount(), 1)
+        self.assertTrue(self.db.load()[0].favorite)
+        self.library.model.set_current(alias)
+        self.assertEqual(self.library.model.current_path, str(source.resolve()))
+        self.library.remove(alias)
+        self.assertEqual(self.library.model.rowCount(), 0)
+        self.assertEqual(self.db.load(), [])
+        self.assertEqual(source.read_bytes(), b'original source')
+
+    @unittest.skipUnless(os.name == 'nt', 'Windows short paths only')
+    def test_library_scan_accepts_windows_short_path_for_favorite_and_removal(self):
+        import ctypes
+        folder = Path(self.temp.name, 'Long library folder name')
+        folder.mkdir()
+        source = folder / 'song.tbm'
+        source.write_bytes(b'original source')
+        kernel = ctypes.WinDLL('kernel32', use_last_error=True)
+        kernel.GetShortPathNameW.argtypes = [ctypes.c_wchar_p, ctypes.c_wchar_p, ctypes.c_uint32]
+        kernel.GetShortPathNameW.restype = ctypes.c_uint32
+        buffer = ctypes.create_unicode_buffer(32768)
+        length = kernel.GetShortPathNameW(str(source), buffer, len(buffer))
+        if not length or buffer.value.casefold() == str(source).casefold():
+            self.skipTest('8.3 short names are unavailable on this filesystem')
+        self.library.scan([buffer.value])
+        self.assertTrue(until(lambda: self.library.model.rowCount() == 1))
+        self.lib_vm.search('song')
+        self.lib_vm.toggleFavorites()
+        self.library.favorite(buffer.value)
+        self.assertEqual(self.library.proxy.rowCount(), 1)
+        self.assertTrue(self.db.load()[0].favorite)
+        self.library.remove(buffer.value)
+        self.assertEqual(self.db.load(), [])
+        self.assertTrue(source.exists())
+
     def test_sequence_queue_repeat_and_manual_stop(self):
         for p in ('a', 'b', 'c'):
             self.add(p, p)

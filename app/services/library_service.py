@@ -69,8 +69,11 @@ class LibraryService(QObject):
             self.model.changed(path)
 
     def remove(self, path: str) -> None:
-        self.database.remove(path)
-        self.model.remove(path)
+        track = self.model.find(path)
+        if track is None:
+            return
+        self.database.remove(track.path)
+        self.model.remove(track.path)
         self.changed.emit()
 
     def visible_paths(self) -> list[str]:

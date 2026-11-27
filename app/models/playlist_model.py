@@ -1,6 +1,7 @@
 from __future__ import annotations
 from PySide6.QtCore import QAbstractListModel, QModelIndex, Qt, QSortFilterProxyModel
 from app.models.track import Track
+from pathlib import Path
 import unicodedata
 
 
@@ -39,22 +40,33 @@ class PlaylistModel(QAbstractListModel):
             self.lookup.update({t.path.casefold(): i for i, t in enumerate(self.tracks[start:], start)})
             self.endInsertRows()
 
-    def find(self, path: str) -> Track | None:
+    def _row(self, path: str) -> int | None:
+        """Resolve aliases only on a lookup miss; normal QML paths stay cheap."""
         row = self.lookup.get(path.casefold())
+        if row is None and path:
+            try:
+                row = self.lookup.get(str(Path(path).resolve()).casefold())
+            except (OSError, RuntimeError):
+                return None
+        return row
+
+    def find(self, path: str) -> Track | None:
+        row = self._row(path)
         return self.tracks[row] if row is not None else None
 
     def changed(self, path: str) -> None:
-        row = self.lookup.get(path.casefold())
+        row = self._row(path)
         if row is not None:
             self.dataChanged.emit(self.index(row), self.index(row), list(self.roles))
 
     def set_current(self, path: str) -> None:
-        old, self.current_path = self.current_path, path
+        track = self.find(path)
+        old, self.current_path = self.current_path, track.path if track else path
         self.changed(old)
         self.changed(path)
 
     def remove(self, path: str) -> None:
-        row = self.lookup.get(path.casefold())
+        row = self._row(path)
         if row is None:
             return
         self.beginRemoveRows(QModelIndex(), row, row)

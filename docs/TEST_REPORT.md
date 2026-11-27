@@ -5,7 +5,7 @@ PySide6/Qt 6.12.0, Qt FFmpeg 9.0.1, PyInstaller 6.22.3.
 
 ## Phạm vi đã xác minh
 
-- 31 bài unittest: 18 bài cho ứng dụng Qt mới và 13 bài hồi quy cho `player.py`.
+- 33 bài unittest: 20 bài cho ứng dụng Qt mới và 13 bài hồi quy cho `player.py`.
   Đặt `TBM_TEST_FILE` để bật bài tích hợp thực; nếu bỏ biến này có 1 bài skip.
 - Giữ nguyên hai tệp `tbm_decoder.py` và `audio_utils.py`. Adapter tái sử dụng
   OGG Vorbis cùng kiểm tra CRC/codebook của decoder hiện có.
@@ -15,6 +15,10 @@ PySide6/Qt 6.12.0, Qt FFmpeg 9.0.1, PyInstaller 6.22.3.
   kích thước/timestamp, lỗi TBM không hợp lệ và hủy decode khi Stop/chuyển bài.
 - Quét thư viện không giải mã; search, favorites, SQLite và xóa bản ghi không
   xóa tệp gốc. Thư viện test 1.000 bài dùng ListView và giữ vị trí cuộn khi lật.
+- Hồi quy đường dẫn Windows: tái hiện lỗi Favorite bằng thư mục tạm dạng tên
+  ngắn 8.3 rồi xác nhận lookup dùng cùng tệp đã resolve. Kiểm tra Favorite,
+  highlight bài hiện tại và xóa bản ghi bằng đường dẫn có `..` hoặc tên ngắn;
+  dữ liệu SQLite đồng bộ và tệp gốc được giữ nguyên.
 - Hai reel xoay độc lập; Pause giữ nguyên góc, Resume tiếp tục xoay. Lật mặt
   không tạo lại transport, không thay đổi cửa sổ 640 × 440 và không đổi trạng
   thái phát. Không phát hiện lỗi binding/ReferenceError/TypeError trong QML.

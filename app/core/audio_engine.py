@@ -62,6 +62,7 @@ class QtAudioEngine(AudioEngine):
         self.fallback = False
 
     def _release(self) -> None:
+        self.data = b''
         self.player.stop()
         self.player.setSource(QUrl())
         if self.buffer:
@@ -84,6 +85,8 @@ class QtAudioEngine(AudioEngine):
         self.player.setSourceDevice(self.buffer, QUrl('memory.ogg'))
 
     def _status(self, status: QMediaPlayer.MediaStatus) -> None:
+        if not self.data:
+            return
         if status == QMediaPlayer.LoadedMedia:
             self.player.setPosition(self.pending_position)
             if self.autoplay:
@@ -92,13 +95,18 @@ class QtAudioEngine(AudioEngine):
             self.ended.emit()
 
     def _error(self, code, message: str) -> None:
-        if self.data and not self.fallback:
+        if not self.data:
+            return
+        if not self.fallback:
             logging.warning('Memory playback failed; retrying local OGG: %s', message)
             self.fallback = True
-            self.temp = TemporaryDirectory(prefix='tbm-cassette-')
-            path = Path(self.temp.name, 'audio.ogg')
-            path.write_bytes(self.data)
-            self.player.setSource(QUrl.fromLocalFile(str(path)))
+            try:
+                self.temp = TemporaryDirectory(prefix='tbm-cassette-')
+                path = Path(self.temp.name, 'audio.ogg')
+                path.write_bytes(self.data)
+                self.player.setSource(QUrl.fromLocalFile(str(path)))
+            except Exception as error:
+                self.error.emit(f'Không phát được OGG: {message}; {error}')
         else:
             self.error.emit(f'Không phát được OGG: {message}')
 

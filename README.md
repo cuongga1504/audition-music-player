@@ -54,6 +54,12 @@ Shuffle được lưu ngay khi bật/tắt. Repeat luân phiên Off → Track �
 Play next dùng hàng đợi ưu tiên. Previous tua về đầu nếu đã phát hơn 3 giây.
 Search hỗ trợ tiếng Việt không dấu. Sort hỗ trợ tên A–Z/Z–A và thời lượng.
 Duration được xác định khi giải mã bài, không giải mã cả thư viện khi mở app.
+Nếu giải mã hoặc phát âm thanh thất bại, ứng dụng tự bỏ qua và thử bài tiếp theo,
+ưu tiên hàng đợi Play next và giữ chế độ Shuffle. Repeat Track không giữ ứng
+dụng ở bài lỗi. Mỗi bài lỗi chỉ được thử một lần trong chuỗi chuyển tự động;
+khi không còn bài có thể thử, ứng dụng dừng và thông báo, không lặp vô hạn.
+Stop hoặc chọn bài thủ công hủy chuyển bài đang chờ; chọn lại bài cho phép thử
+giải mã lại. Lỗi xuất OGG chỉ báo lỗi xuất, không tự đổi bài đang phát.
 Refresh quét lại nguồn đã nhập; thư mục được quét đệ quy và không theo symlink.
 
 ## Kiến trúc và xử lý âm thanh

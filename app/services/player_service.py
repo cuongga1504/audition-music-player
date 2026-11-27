@@ -5,7 +5,7 @@ import logging
 from pathlib import Path
 import random
 import sys
-from PySide6.QtCore import QObject, Signal, QProcess
+from PySide6.QtCore import QObject, Signal, QProcess, QTimer
 from app.core.audio_cache import AudioCache
 from app.core.audio_engine import AudioEngine
 from app.core.audio_analyzer import AudioAnalyzer
@@ -40,6 +40,12 @@ class PlayerService(QObject):
         self.process: QProcess | None = None
         self.retired: list[QProcess] = []
         self.export_path = ''
+        self.failed_paths: set[str] = set()
+        self.playback_requested = False
+        self.recovery_timer = QTimer(self)
+        self.recovery_timer.setSingleShot(True)
+        self.recovery_timer.setInterval(100)
+        self.recovery_timer.timeout.connect(self._skip_failed)
         self.analyzer = AudioAnalyzer()
         self.analyzer.levels.connect(self.spectrumChanged.emit)
         engine.pcm.connect(self.analyzer.consume)
@@ -73,11 +79,43 @@ class PlayerService(QObject):
             self.analyzer.reset()
         self.changed.emit()
 
-    def _error(self, message: str) -> None:
-        self.busy = False
+    def _error(self, message: str, playback: bool = True) -> None:
         logging.error(message)
-        self.status.emit(message)
+        if playback and self.playback_requested and self.path:
+            self.failed_paths.add(self.path)
+            self.playback_requested = False
+            self.loaded = False
+            self.cancel()
+            self.engine.close()
+            self._playing(False)
+            self.status.emit(f'Bỏ qua {self.title}: {message}')
+            self.recovery_timer.start()
+        elif not playback:
+            self.busy = False
+            self.status.emit(message)
         self.changed.emit()
+
+    def _skip_failed(self) -> None:
+        """Try each remaining track at most once, even with Repeat Track/All."""
+        while self.queue:
+            path = self.queue.popleft()
+            if path not in self.failed_paths and self.library.model.find(path):
+                self.select(path, record_history=False, automatic=True)
+                return
+        paths = self.library.visible_paths()
+        available = [p for p in paths if p not in self.failed_paths]
+        if not available:
+            self.status.emit('Đã dừng: không còn bài có thể phát trong danh sách.')
+            self.changed.emit()
+            return
+        if self.shuffle:
+            unseen = [p for p in available if p not in self.shuffle_seen]
+            path = random.choice(unseen or available)
+        else:
+            index = paths.index(self.path) + 1 if self.path in paths else 0
+            ordered = paths[index:] + paths[:index]
+            path = next(p for p in ordered if p not in self.failed_paths)
+        self.select(path, record_history=False, automatic=True)
 
     def cancel(self) -> None:
         if self.process:
@@ -87,9 +125,13 @@ class PlayerService(QObject):
             process.kill()
         self.busy = False
 
-    def select(self, path: str, position: int = 0, export: str = '', record_history: bool = True) -> None:
+    def select(self, path: str, position: int = 0, export: str = '', record_history: bool = True, automatic: bool = False) -> None:
         self.cancel()
         if not export:
+            self.recovery_timer.stop()
+            self.playback_requested = False
+            if not automatic:
+                self.failed_paths.clear()
             if record_history and self.path and self.path != path:
                 self.history.append(self.path)
                 self.history = self.history[-256:]
@@ -100,6 +142,7 @@ class PlayerService(QObject):
             track = self.library.model.find(path)
             self.duration = int(track.duration * 1000) if track else 0
             self.library.model.set_current(path)
+            self.playback_requested = True
         self.busy = True
         self.status.emit('Đang giải mã TBM…' if not export else 'Đang chuẩn bị xuất OGG…')
         self.changed.emit()
@@ -119,7 +162,7 @@ class PlayerService(QObject):
         if proc is self.process and error == QProcess.FailedToStart:
             self.process = None
             proc.deleteLater()
-            self._error('Không khởi động được decoder worker: ' + proc.errorString())
+            self._error('Không khởi động được decoder worker: ' + proc.errorString(), playback=not bool(self.export_path))
 
     def _decoded(self, proc: QProcess, path: str, position: int, export: str, code: int) -> None:
         if proc is not self.process:
@@ -152,7 +195,7 @@ class PlayerService(QObject):
                 self.engine.load(data, min(position, max(0, self.duration - 1)))
                 self.status.emit('OGG Vorbis • ' + str(metadata['sample_rate']) + ' Hz • ' + str(metadata['channels']) + ' ch')
         except Exception as error:
-            self._error(str(error))
+            self._error(str(error), playback=not bool(export))
         finally:
             proc.deleteLater()
             self.changed.emit()
@@ -163,6 +206,9 @@ class PlayerService(QObject):
         if self.playing:
             self.engine.pause()
         elif self.loaded:
+            if not self.playback_requested:
+                self.failed_paths.clear()
+                self.playback_requested = True
             self.engine.play()
         else:
             paths = self.library.visible_paths()
@@ -181,6 +227,8 @@ class PlayerService(QObject):
         self.changed.emit()
 
     def stop(self) -> None:
+        self.recovery_timer.stop()
+        self.playback_requested = False
         self.cancel()
         self.engine.stop()
         self.position = 0
@@ -188,13 +236,15 @@ class PlayerService(QObject):
 
     def next(self, natural: bool = False) -> None:
         paths = self.library.visible_paths()
+        if natural:
+            paths = [p for p in paths if p not in self.failed_paths]
         if natural and self.repeat == 1 and self.path:
-            self.select(self.path)
+            self.select(self.path, automatic=True)
             return
         while self.queue:
             queued = self.queue.popleft()
-            if self.library.model.find(queued):
-                self.select(queued)
+            if self.library.model.find(queued) and (not natural or queued not in self.failed_paths):
+                self.select(queued, automatic=natural)
                 return
         if not paths:
             self.stop()
@@ -210,15 +260,15 @@ class PlayerService(QObject):
                     self.shuffle_remaining = [p for p in paths if p != self.path]
                 random.shuffle(self.shuffle_remaining)
             if self.shuffle_remaining:
-                self.select(self.shuffle_remaining.pop())
+                self.select(self.shuffle_remaining.pop(), automatic=natural)
             elif self.repeat == 2 or not natural:
-                self.select(paths[0])
+                self.select(paths[0], automatic=natural)
             return
         index = paths.index(self.path) + 1 if self.path in paths else 0
         if index < len(paths):
-            self.select(paths[index])
+            self.select(paths[index], automatic=natural)
         elif not natural or self.repeat == 2:
-            self.select(paths[0])
+            self.select(paths[0], automatic=natural)
 
     def previous(self) -> None:
         if self.position > 3000 and self.loaded:
@@ -236,6 +286,8 @@ class PlayerService(QObject):
                 self.select(paths[(i - 1) % len(paths)])
 
     def close(self) -> None:
+        self.recovery_timer.stop()
+        self.playback_requested = False
         for key, value in {'track': self.path, 'position': self.position, 'volume': self.volume, 'shuffle': self.shuffle, 'repeat': self.repeat}.items():
             self.settings.set(key, value)
         self.cancel()

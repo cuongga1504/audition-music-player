@@ -5,7 +5,7 @@ PySide6/Qt 6.12.0, Qt FFmpeg 9.0.1, PyInstaller 6.22.3.
 
 ## Phạm vi đã xác minh
 
-- 26 bài unittest: 13 bài cho ứng dụng Qt mới và 13 bài hồi quy cho `player.py`.
+- 31 bài unittest: 18 bài cho ứng dụng Qt mới và 13 bài hồi quy cho `player.py`.
   Đặt `TBM_TEST_FILE` để bật bài tích hợp thực; nếu bỏ biến này có 1 bài skip.
 - Giữ nguyên hai tệp `tbm_decoder.py` và `audio_utils.py`. Adapter tái sử dụng
   OGG Vorbis cùng kiểm tra CRC/codebook của decoder hiện có.
@@ -24,6 +24,13 @@ PySide6/Qt 6.12.0, Qt FFmpeg 9.0.1, PyInstaller 6.22.3.
   lượt mới không phát ngay lại bài vừa kết thúc; tôn trọng bộ lọc và Play next.
   Kiểm tra Next khi bộ lọc chỉ còn một bài, lưu trạng thái ngay và đồng bộ nút
   bật màu cam ở cả Player lẫn mini playback bar của Library.
+- Tự bỏ qua lỗi giải mã/phát: kiểm tra nhiều TBM hỏng liên tiếp, toàn bộ danh
+  sách lỗi với Repeat Off/Track/All và Shuffle; mỗi tệp được thử tối đa một lần
+  trong chuỗi phục hồi. Lỗi cuối danh sách có thể chuyển về bài còn lại ở đầu.
+  Stop/chọn bài thủ công hủy chuyển bài chờ; cho phép thử lại thủ công. Lỗi xuất
+  không đổi bài đang phát. Qt thử RAM rồi tệp tạm trước khi báo lỗi phát; bỏ qua
+  tín hiệu lỗi của nguồn đã giải phóng. Bài tích hợp thực bắt đầu bằng TBM hỏng
+  và xác nhận tự chuyển sang TBM phát được, có PCM thật.
 - EXE windowed: worker trả OGG hợp lệ qua pipe; QML smoke test exit 0;
   `--smoke-test --play <TBM>` nhận PCM thực và exit 0 sau 10 giây.
 - Kiểm tra ảnh chụp Player và Library với nhạc/thư viện thật, cùng ảnh Dark

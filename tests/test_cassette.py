@@ -252,18 +252,118 @@ class ApplicationTests(unittest.TestCase):
         self.lib_vm.search('b')
         with patch.object(self.player, 'select') as select:
             self.player.next(natural=True)
-            select.assert_called_once_with('b')
+            select.assert_called_once_with('b', automatic=True)
         self.player.queue.append('c')
         with patch.object(self.player, 'select') as select:
             self.player.next()
-            select.assert_called_once_with('c')
+            select.assert_called_once_with('c', automatic=False)
         self.player.path = 'b'
         self.player.shuffle_seen.add('b')
         with patch.object(self.player, 'select') as select:
             self.player.next(natural=True)
             select.assert_not_called()
             self.player.next()
-            select.assert_called_once_with('b')
+            select.assert_called_once_with('b', automatic=False)
+
+    def test_decode_errors_skip_all_bad_tracks_once_even_with_repeat(self):
+        for repeat in (0, 1, 2):
+            with self.subTest(repeat=repeat):
+                self.player.repeat = repeat
+                self.player.shuffle = repeat == 2
+                paths = []
+                for index in range(3):
+                    path = Path(self.temp.name, f'bad-{repeat}-{index}.tbm')
+                    path.write_bytes(b'invalid TBM')
+                    self.add(str(path), str(path.name))
+                    paths.append(str(path))
+                # Filter out tracks created in previous subtests.
+                self.lib_vm.search(f'bad-{repeat}-')
+                messages = []
+                self.player.status.connect(messages.append)
+                self.player.select(paths[0])
+                self.assertTrue(until(lambda: any('không còn bài' in m for m in messages)))
+                skipped = [m for m in messages if m.startswith('Bỏ qua ')]
+                self.assertEqual(len(skipped), 3)
+                self.assertEqual(self.player.failed_paths, set(paths))
+                self.assertFalse(self.player.playing)
+                self.assertFalse(self.player.busy)
+                self.assertFalse(self.player.loaded)
+                QTest.qWait(250)
+                self.assertEqual(len([m for m in messages if m.startswith('Bỏ qua ')]), 3)
+                self.player.status.disconnect(messages.append)
+
+    def test_audio_error_skips_to_queued_track_and_stop_cancels_recovery(self):
+        for path in ('a', 'b', 'c'):
+            self.add(path, path)
+        self.player.path = 'a'
+        self.player.playback_requested = True
+        self.player.loaded = True
+        self.player.repeat = 1
+        self.player.queue.append('c')
+        with patch.object(self.player, 'select') as select:
+            self.transport.error.emit('Audio backend rejected track')
+            self.assertTrue(until(lambda: select.called))
+            select.assert_called_once_with('c', record_history=False, automatic=True)
+        self.assertIn('a', self.player.failed_paths)
+        self.assertFalse(self.player.loaded)
+        self.player.playback_requested = True
+        with patch.object(self.player, 'select') as select:
+            self.transport.error.emit('Audio backend rejected track')
+            self.player.stop()
+            QTest.qWait(200)
+            select.assert_not_called()
+
+    def test_error_at_end_wraps_and_failed_export_does_not_skip_playback(self):
+        for path in ('a', 'b', 'c'):
+            self.add(path, path)
+        self.player.path = 'c'
+        self.player.playback_requested = True
+        with patch.object(self.player, 'select') as select:
+            self.transport.error.emit('Cannot play')
+            self.assertTrue(until(lambda: select.called))
+            select.assert_called_once_with('a', record_history=False, automatic=True)
+        self.player.path = 'a'
+        self.player.playback_requested = True
+        self.player.loaded = True
+        self.player._playing(True)
+        with patch.object(self.player, 'select') as select:
+            self.player._error('Cannot write exported OGG', playback=False)
+            QTest.qWait(200)
+            select.assert_not_called()
+        self.assertTrue(self.player.playing)
+        self.assertTrue(self.player.loaded)
+
+    def test_manual_selection_cancels_pending_skip_and_allows_retry(self):
+        path = Path(self.temp.name, 'retry.tbm')
+        path.write_bytes(b'invalid')
+        self.add(str(path))
+        self.player.path = str(path)
+        self.player.playback_requested = True
+        self.transport.error.emit('Cannot play')
+        self.assertTrue(self.player.recovery_timer.isActive())
+        self.player.select(str(path))
+        self.assertFalse(self.player.recovery_timer.isActive())
+        self.assertEqual(self.player.failed_paths, set())
+        self.player.stop()
+
+    def test_qt_engine_only_reports_failure_after_memory_and_file_attempts(self):
+        engine = QtAudioEngine()
+        errors = []
+        engine.error.connect(errors.append)
+        try:
+            engine.data = b'OggS test'
+            with patch.object(engine.player, 'setSource') as set_source:
+                engine._error(None, 'Memory source failed')
+                self.assertTrue(engine.fallback)
+                self.assertEqual(errors, [])
+                self.assertEqual(set_source.call_count, 1)
+                engine._error(None, 'File source failed')
+                self.assertEqual(len(errors), 1)
+            engine.close()
+            engine._error(None, 'Late error from released source')
+            self.assertEqual(len(errors), 1)
+        finally:
+            engine.close()
 
     def test_shuffle_button_is_available_on_both_faces(self):
         self.add('a', 'Alpha')
@@ -360,9 +460,13 @@ class ApplicationTests(unittest.TestCase):
         errors, levels = [], []
         engine.error.connect(errors.append)
         self.player.spectrumChanged.connect(levels.append)
-        self.player.select(path)
+        bad = Path(self.temp.name, 'broken-before-real-track.tbm')
+        bad.write_bytes(b'invalid TBM')
+        self.add(str(bad), 'Broken track')
+        self.player.select(str(bad))
         self.assertTrue(until(lambda: self.player.playing or errors, 30000), str(errors))
         self.assertFalse(errors)
+        self.assertEqual(self.player.path, path)
         self.assertTrue(until(lambda: self.player.position > 200 and any(max(v) > 0 for v in levels), 10000))
         self.assertFalse(engine.fallback, 'Expected RAM playback')
         self.assertGreater(self.player.duration, 1000)

@@ -117,6 +117,14 @@ Xem [báo cáo kiểm thử](docs/TEST_REPORT.md) để biết phạm vi xác mi
 ./build-cassette.ps1
 ```
 
+Script tự tạo ZIP để đính kèm GitHub Release:
+`dist/TBMCassettePlayer-v1.0.0-win-x64.zip`. Đổi phiên bản bằng
+`./build-cassette.ps1 -Version 1.0.1`.
+
+Để GitHub tự build và upload ZIP mỗi khi push tag phiên bản, xem
+[hướng dẫn GitHub Actions](docs/GITHUB_ACTIONS.md). Workflow cũng hỗ trợ chạy
+thủ công từ tab Actions để tải bản build trong Artifacts.
+
 Chạy `dist/TBMCassettePlayer/TBMCassettePlayer.exe`. Phân phối **toàn bộ thư mục**
 `TBMCassettePlayer`, không tách EXE khỏi `_internal`. Dùng onedir để tránh giải nén
 Qt mỗi lần mở hoặc tạo decoder worker. Hook trong `packaging/hooks` chỉ thu thập

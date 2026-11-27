@@ -1,0 +1,2646 @@
+{
+  "scope": "All 5585 source containers inventoried. OGG reconstruction checked on representatives of unknown header groups and every container failure; not full FFmpeg decoding of every song.",
+  "inventory": {
+    "done": 5585,
+    "total": 5585,
+    "seconds": 472,
+    "groups": {
+      "Audition legacy k1001 server header": {
+        "count": 864,
+        "examples": [
+          "j0021.tbm",
+          "k0005.abm",
+          "k0005.tbm",
+          "k0017.abm"
+        ]
+      },
+      "template-2-0": {
+        "count": 1009,
+        "examples": [
+          "k0095.tbm",
+          "k0416.tbm",
+          "k0502.tbm",
+          "k0514.tbm"
+        ]
+      },
+      "UNKNOWN:a46e9ad91f818acb:1545": {
+        "count": 44,
+        "examples": [
+          "k1106.tbm",
+          "k1109.tbm",
+          "k1111.tbm",
+          "k1112.tbm"
+        ]
+      },
+      "template-2-2": {
+        "count": 2035,
+        "examples": [
+          "k3256.tbm",
+          "k3899.tbm",
+          "k3927.tbm",
+          "k3928.tbm"
+        ]
+      },
+      "template-2-4": {
+        "count": 340,
+        "examples": [
+          "k3531.tbm",
+          "k3532.tbm",
+          "k3536.tbm",
+          "k3990.tbm"
+        ]
+      },
+      "template-2-1": {
+        "count": 139,
+        "examples": [
+          "k3543.tbm",
+          "k3545.tbm",
+          "k3547.tbm",
+          "k3556.tbm"
+        ]
+      },
+      "UNKNOWN:37100c05cbd6672f:1409": {
+        "count": 74,
+        "examples": [
+          "kg0035.tbm",
+          "kg0035_note.tbm",
+          "kg0036.tbm",
+          "kg0036_note.tbm"
+        ]
+      },
+      "UNKNOWN:44bbdba16db60426:1422": {
+        "count": 22,
+        "examples": [
+          "kg0108.tbm",
+          "kg0108_note.tbm",
+          "kg0115.tbm",
+          "kg0115_note.tbm"
+        ]
+      },
+      "UNKNOWN:6688cb5b0bc2c355:1425": {
+        "count": 25,
+        "examples": [
+          "kg0131.tbm",
+          "kg0131_note.tbm",
+          "kg0133.tbm",
+          "kg0133_note.tbm"
+        ]
+      },
+      "UNKNOWN:8e14e87c12067c3c:1804": {
+        "count": 6,
+        "examples": [
+          "kg0136.tbm",
+          "kg0136_note.tbm",
+          "kg0139.tbm",
+          "kg0139_note.tbm"
+        ]
+      },
+      "UNKNOWN:ce4b0a39dc18f8f4:1471": {
+        "count": 299,
+        "examples": [
+          "kg0169.tbm",
+          "kg0169_note.tbm",
+          "kg1043.tbm",
+          "kg1043_note.tbm"
+        ]
+      },
+      "UNKNOWN:d8f514706d105208:1727": {
+        "count": 5,
+        "examples": [
+          "v0847.tbm",
+          "vg0022.tbm",
+          "vg0022_note.tbm",
+          "vg0152.tbm"
+        ]
+      },
+      "UNKNOWN:c18eefff9cca50cf:1558": {
+        "count": 1,
+        "examples": [
+          "v1019.tbm"
+        ]
+      },
+      "UNKNOWN:a4740a75b04c9aa5:1727": {
+        "count": 8,
+        "examples": [
+          "v1398.tbm",
+          "v1403.tbm",
+          "v1406.tbm",
+          "v1523.tbm"
+        ]
+      },
+      "UNKNOWN:01837f38db028f32:1824": {
+        "count": 1,
+        "examples": [
+          "v1399.tbm"
+        ]
+      },
+      "UNKNOWN:6de96654716d4a77:1846": {
+        "count": 2,
+        "examples": [
+          "v1400.tbm",
+          "v1405.tbm"
+        ]
+      },
+      "UNKNOWN:507515a7f6e519ab:1102": {
+        "count": 2,
+        "examples": [
+          "v1401.tbm",
+          "v1565.tbm"
+        ]
+      },
+      "UNKNOWN:36c3a8f7b3a98461:1852": {
+        "count": 1,
+        "examples": [
+          "v1402.tbm"
+        ]
+      },
+      "UNKNOWN:b537a6752c31e5a6:1823": {
+        "count": 1,
+        "examples": [
+          "v1404.tbm"
+        ]
+      },
+      "UNKNOWN:408d0e4662850a79:1813": {
+        "count": 1,
+        "examples": [
+          "v1407.tbm"
+        ]
+      },
+      "UNKNOWN:a0224dfcd7018b17:1832": {
+        "count": 1,
+        "examples": [
+          "v1467.tbm"
+        ]
+      },
+      "UNKNOWN:a75dc0899876422f:1817": {
+        "count": 1,
+        "examples": [
+          "v1489.tbm"
+        ]
+      },
+      "UNKNOWN:8bb5aea781e97115:1089": {
+        "count": 1,
+        "examples": [
+          "v1525.tbm"
+        ]
+      },
+      "UNKNOWN:2873ac3216863a5c:1092": {
+        "count": 1,
+        "examples": [
+          "v1526.tbm"
+        ]
+      },
+      "UNKNOWN:0081fca47e62f6be:1821": {
+        "count": 1,
+        "examples": [
+          "v1552.tbm"
+        ]
+      },
+      "UNKNOWN:e3e636d9094bae3b:1494": {
+        "count": 2,
+        "examples": [
+          "v1607.tbm",
+          "v1620.tbm"
+        ]
+      },
+      "template-2--1": {
+        "count": 287,
+        "examples": [
+          "v1633.tbm",
+          "v2000.tbm",
+          "v2002.tbm",
+          "v2003.tbm"
+        ]
+      },
+      "UNKNOWN:2323c3c1d471e5ae:1641": {
+        "count": 1,
+        "examples": [
+          "v1686.tbm"
+        ]
+      },
+      "UNKNOWN:6c719b5a183e61f2:1082": {
+        "count": 10,
+        "examples": [
+          "v1894.tbm",
+          "v1895.tbm",
+          "v1898.tbm",
+          "v1899.tbm"
+        ]
+      },
+      "UNKNOWN:b3b140c6cd416f27:1166": {
+        "count": 1,
+        "examples": [
+          "v1896.tbm"
+        ]
+      },
+      "UNKNOWN:e0374031a3e84824:1187": {
+        "count": 1,
+        "examples": [
+          "v1897.tbm"
+        ]
+      },
+      "UNKNOWN:0cf9d190bea3d9f2:1165": {
+        "count": 1,
+        "examples": [
+          "v1902.tbm"
+        ]
+      },
+      "UNKNOWN:7f869ed7b6330868:1205": {
+        "count": 1,
+        "examples": [
+          "v1908.tbm"
+        ]
+      },
+      "UNKNOWN:8a8ee07fc165bd15:1095": {
+        "count": 1,
+        "examples": [
+          "v1921.tbm"
+        ]
+      },
+      "UNKNOWN:486d88cebedc363d:1183": {
+        "count": 1,
+        "examples": [
+          "v1961.tbm"
+        ]
+      },
+      "UNKNOWN:4731d3dfddf96f0a:1184": {
+        "count": 1,
+        "examples": [
+          "v1986.tbm"
+        ]
+      },
+      "UNKNOWN:673164544a99f155:1654": {
+        "count": 1,
+        "examples": [
+          "v2010.tbm"
+        ]
+      },
+      "UNKNOWN:aba1519e6359efc8:1802": {
+        "count": 6,
+        "examples": [
+          "v2034.tbm",
+          "v2041.tbm",
+          "vg0068.tbm",
+          "vg0068_note.tbm"
+        ]
+      },
+      "UNKNOWN:d5001e81eae80cbd:2163": {
+        "count": 1,
+        "examples": [
+          "v2051.tbm"
+        ]
+      },
+      "UNKNOWN:efd37ad78e70b549:1972": {
+        "count": 1,
+        "examples": [
+          "v2052.tbm"
+        ]
+      },
+      "UNKNOWN:d2276664264dbbd7:2136": {
+        "count": 1,
+        "examples": [
+          "v2061.tbm"
+        ]
+      },
+      "UNKNOWN:8b114e6e45ea0d76:2023": {
+        "count": 2,
+        "examples": [
+          "v2062.tbm",
+          "v2268.tbm"
+        ]
+      },
+      "UNKNOWN:fbe7883f05e11df8:1964": {
+        "count": 1,
+        "examples": [
+          "v2065.tbm"
+        ]
+      },
+      "UNKNOWN:473c58c757e50c35:1981": {
+        "count": 1,
+        "examples": [
+          "v2068.tbm"
+        ]
+      },
+      "UNKNOWN:9ca7277bd07e94cc:2137": {
+        "count": 1,
+        "examples": [
+          "v2074.tbm"
+        ]
+      },
+      "UNKNOWN:7a900b6170233654:2004": {
+        "count": 2,
+        "examples": [
+          "v2079.tbm",
+          "v2103.tbm"
+        ]
+      },
+      "UNKNOWN:69b75687ee06de3f:2032": {
+        "count": 1,
+        "examples": [
+          "v2081.tbm"
+        ]
+      },
+      "UNKNOWN:094c62daef70f985:2017": {
+        "count": 1,
+        "examples": [
+          "v2083.tbm"
+        ]
+      },
+      "UNKNOWN:34ac93b4af01a003:2002": {
+        "count": 1,
+        "examples": [
+          "v2084.tbm"
+        ]
+      },
+      "UNKNOWN:a7b3d98f68ec58d9:2013": {
+        "count": 1,
+        "examples": [
+          "v2099.tbm"
+        ]
+      },
+      "UNKNOWN:96d3bba3e8e67688:2051": {
+        "count": 2,
+        "examples": [
+          "v2107.tbm",
+          "vng0119.tbm"
+        ]
+      },
+      "UNKNOWN:6fd7498b06825908:2024": {
+        "count": 1,
+        "examples": [
+          "v2111.tbm"
+        ]
+      },
+      "UNKNOWN:b6f6c713d5b340b5:1983": {
+        "count": 2,
+        "examples": [
+          "v2121.tbm",
+          "v2205.tbm"
+        ]
+      },
+      "UNKNOWN:707fa21b8e8ec81d:2020": {
+        "count": 2,
+        "examples": [
+          "v2128.tbm",
+          "v2270.tbm"
+        ]
+      },
+      "UNKNOWN:a4a19fa88e8441f1:1988": {
+        "count": 2,
+        "examples": [
+          "v2130.tbm",
+          "v2280.tbm"
+        ]
+      },
+      "UNKNOWN:74e10b0132402ff0:1967": {
+        "count": 1,
+        "examples": [
+          "v2132.tbm"
+        ]
+      },
+      "UNKNOWN:cf6c90efc090c6c8:1982": {
+        "count": 2,
+        "examples": [
+          "v2146.tbm",
+          "v2180.tbm"
+        ]
+      },
+      "UNKNOWN:08284f80d1b5d1e8:2049": {
+        "count": 1,
+        "examples": [
+          "v2149.tbm"
+        ]
+      },
+      "UNKNOWN:26f068d584c58771:1975": {
+        "count": 1,
+        "examples": [
+          "v2152.tbm"
+        ]
+      },
+      "UNKNOWN:e271ae359a1cf0ce:2022": {
+        "count": 1,
+        "examples": [
+          "v2157.tbm"
+        ]
+      },
+      "UNKNOWN:171187d1888f8f53:2072": {
+        "count": 1,
+        "examples": [
+          "v2159.tbm"
+        ]
+      },
+      "UNKNOWN:99d92250349d6c8f:1969": {
+        "count": 1,
+        "examples": [
+          "v2179.tbm"
+        ]
+      },
+      "UNKNOWN:846fe8a172ed9581:1493": {
+        "count": 30,
+        "examples": [
+          "v2188.tbm",
+          "v2371.tbm",
+          "v2463.tbm",
+          "v2466.tbm"
+        ]
+      },
+      "UNKNOWN:bfcf4856dc585f99:2044": {
+        "count": 1,
+        "examples": [
+          "v2207.tbm"
+        ]
+      },
+      "UNKNOWN:f7a44378d67398e6:2008": {
+        "count": 1,
+        "examples": [
+          "v2208.tbm"
+        ]
+      },
+      "UNKNOWN:ae02edf4543fa9bd:1979": {
+        "count": 1,
+        "examples": [
+          "v2213.tbm"
+        ]
+      },
+      "UNKNOWN:33ea6bf818115a55:1968": {
+        "count": 1,
+        "examples": [
+          "v2216.tbm"
+        ]
+      },
+      "UNKNOWN:918d9704935a865d:1912": {
+        "count": 1,
+        "examples": [
+          "v2220.tbm"
+        ]
+      },
+      "UNKNOWN:36ccf5144cd95997:2029": {
+        "count": 1,
+        "examples": [
+          "v2231.tbm"
+        ]
+      },
+      "UNKNOWN:c4a3a90c4be05691:2005": {
+        "count": 1,
+        "examples": [
+          "v2237.tbm"
+        ]
+      },
+      "UNKNOWN:d11464de7cd979e5:2021": {
+        "count": 1,
+        "examples": [
+          "v2238.tbm"
+        ]
+      },
+      "UNKNOWN:eb3de9c8fcbdae76:1828": {
+        "count": 1,
+        "examples": [
+          "v2240.tbm"
+        ]
+      },
+      "UNKNOWN:8b9512342f15d6b2:2012": {
+        "count": 2,
+        "examples": [
+          "v2241.tbm",
+          "v2330.tbm"
+        ]
+      },
+      "UNKNOWN:302360423f9ba175:2006": {
+        "count": 1,
+        "examples": [
+          "v2245.tbm"
+        ]
+      },
+      "UNKNOWN:f135b11021a8984d:2041": {
+        "count": 2,
+        "examples": [
+          "v2246.tbm",
+          "v2263.tbm"
+        ]
+      },
+      "UNKNOWN:f13785a6807e6107:2036": {
+        "count": 1,
+        "examples": [
+          "v2250.tbm"
+        ]
+      },
+      "UNKNOWN:69c97592e2ee8032:2062": {
+        "count": 1,
+        "examples": [
+          "v2253.tbm"
+        ]
+      },
+      "UNKNOWN:92234aeb237966f1:2019": {
+        "count": 1,
+        "examples": [
+          "v2254.tbm"
+        ]
+      },
+      "UNKNOWN:797780e2d79b81f0:2001": {
+        "count": 1,
+        "examples": [
+          "v2256.tbm"
+        ]
+      },
+      "UNKNOWN:b51dd1546642388a:2056": {
+        "count": 1,
+        "examples": [
+          "v2274.tbm"
+        ]
+      },
+      "UNKNOWN:6bd02a5387fd62cb:2016": {
+        "count": 1,
+        "examples": [
+          "v2290.tbm"
+        ]
+      },
+      "UNKNOWN:13283fc7a5002b77:2046": {
+        "count": 1,
+        "examples": [
+          "v2291.tbm"
+        ]
+      },
+      "UNKNOWN:a696709dae0f56a8:1986": {
+        "count": 1,
+        "examples": [
+          "v2294.tbm"
+        ]
+      },
+      "UNKNOWN:0bae8776af18150e:4376": {
+        "count": 1,
+        "examples": [
+          "v2306.tbm"
+        ]
+      },
+      "UNKNOWN:8764edad38ceea01:2025": {
+        "count": 1,
+        "examples": [
+          "v2308.tbm"
+        ]
+      },
+      "UNKNOWN:e2fac9c2d03d1d85:1496": {
+        "count": 9,
+        "examples": [
+          "v2312.tbm",
+          "vg0333.tbm",
+          "vg0333_note.tbm",
+          "vng0139.tbm"
+        ]
+      },
+      "UNKNOWN:edbdf5d4e6b7ce20:1936": {
+        "count": 1,
+        "examples": [
+          "v2321.tbm"
+        ]
+      },
+      "UNKNOWN:f3b4f580c0367a13:1973": {
+        "count": 1,
+        "examples": [
+          "v2323.tbm"
+        ]
+      },
+      "UNKNOWN:ea102dcc780ab050:1655": {
+        "count": 1,
+        "examples": [
+          "v2350.tbm"
+        ]
+      },
+      "UNKNOWN:c0f6b2f9799c822b:1690": {
+        "count": 1,
+        "examples": [
+          "v2351.tbm"
+        ]
+      },
+      "UNKNOWN:b55133b1f49020c2:1670": {
+        "count": 1,
+        "examples": [
+          "v2358.tbm"
+        ]
+      },
+      "UNKNOWN:da08f280f19b262f:1738": {
+        "count": 1,
+        "examples": [
+          "v2370.tbm"
+        ]
+      },
+      "UNKNOWN:63ffbd4a83cc7e78:1674": {
+        "count": 2,
+        "examples": [
+          "v2373.tbm",
+          "v2437.tbm"
+        ]
+      },
+      "UNKNOWN:979432d803041539:1714": {
+        "count": 1,
+        "examples": [
+          "v2389.tbm"
+        ]
+      },
+      "UNKNOWN:e2e3b86c80b600a4:1686": {
+        "count": 1,
+        "examples": [
+          "v2398.tbm"
+        ]
+      },
+      "UNKNOWN:c90e1f3938436fa9:1677": {
+        "count": 1,
+        "examples": [
+          "v2399.tbm"
+        ]
+      },
+      "UNKNOWN:ba68e1ce4795800a:1675": {
+        "count": 1,
+        "examples": [
+          "v2401.tbm"
+        ]
+      },
+      "UNKNOWN:2018cda8c42971d9:1680": {
+        "count": 1,
+        "examples": [
+          "v2421.tbm"
+        ]
+      },
+      "UNKNOWN:a2bea2bfbae8a250:1720": {
+        "count": 1,
+        "examples": [
+          "v2432.tbm"
+        ]
+      },
+      "UNKNOWN:3dedd5b987700d01:1658": {
+        "count": 1,
+        "examples": [
+          "v2439.tbm"
+        ]
+      },
+      "UNKNOWN:f75faca465880b4c:1669": {
+        "count": 1,
+        "examples": [
+          "v2442.tbm"
+        ]
+      },
+      "UNKNOWN:d47abb35f683a959:1739": {
+        "count": 1,
+        "examples": [
+          "v2453.tbm"
+        ]
+      },
+      "UNKNOWN:751ba1149f67aa34:1456": {
+        "count": 92,
+        "examples": [
+          "v2514.tbm",
+          "v2519.tbm",
+          "v2530.tbm",
+          "v2566.tbm"
+        ]
+      },
+      "template-1-0": {
+        "count": 1,
+        "examples": [
+          "vg0001_note.tbm"
+        ]
+      },
+      "UNKNOWN:feabcb564bf421d0:1727": {
+        "count": 4,
+        "examples": [
+          "vg0040.tbm",
+          "vg0048.tbm",
+          "vng0022.tbm",
+          "vng0022_note.tbm"
+        ]
+      },
+      "UNKNOWN:87f42827b0943723:1745": {
+        "count": 1,
+        "examples": [
+          "vg0040_note.tbm"
+        ]
+      },
+      "template-2-8": {
+        "count": 2,
+        "examples": [
+          "vg0046.tbm",
+          "vg0046_note.tbm"
+        ]
+      },
+      "UNKNOWN:b27f95124281eee6:1807": {
+        "count": 16,
+        "examples": [
+          "vg0049.tbm",
+          "vg0049_note.tbm",
+          "vg0053.tbm",
+          "vg0053_note.tbm"
+        ]
+      },
+      "UNKNOWN:617795d35b729bea:1835": {
+        "count": 2,
+        "examples": [
+          "vg0120.tbm",
+          "vg0120_note.tbm"
+        ]
+      },
+      "UNKNOWN:7939dc3e441a5208:1465": {
+        "count": 14,
+        "examples": [
+          "vng0033.tbm",
+          "vng0033_note.tbm",
+          "vng0050.tbm",
+          "vng0050_note.tbm"
+        ]
+      },
+      "template-2-5": {
+        "count": 8,
+        "examples": [
+          "vng0052.tbm",
+          "vng0052_note.tbm",
+          "vng0100.tbm",
+          "vng0100_note.tbm"
+        ]
+      },
+      "UNKNOWN:210546b5f15cbe6f:1807": {
+        "count": 2,
+        "examples": [
+          "vng0088.tbm",
+          "vng0088_note.tbm"
+        ]
+      },
+      "UNKNOWN:8381139fedeb79da:1368": {
+        "count": 1,
+        "examples": [
+          "vng0119_note.tbm"
+        ]
+      },
+      "template-1-1": {
+        "count": 1,
+        "examples": [
+          "vng0130_note.tbm"
+        ]
+      },
+      "UNKNOWN:ff38cce5d63dcd8c:1498": {
+        "count": 2,
+        "examples": [
+          "vng0222.tbm",
+          "vng0222_note.tbm"
+        ]
+      },
+      "template-1--1": {
+        "count": 1,
+        "examples": [
+          "vng0232_note.tbm"
+        ]
+      },
+      "UNKNOWN:a1cf0ca3dda7f1a2:1523": {
+        "count": 1,
+        "examples": [
+          "vng0324.tbm"
+        ]
+      },
+      "UNKNOWN:fb5c4f107d6d7e99:1210": {
+        "count": 1,
+        "examples": [
+          "vng0324_note.tbm"
+        ]
+      }
+    },
+    "errors": [
+      [
+        "k0344.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "k0347.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "k0723.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "k0806.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "k1013.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "k1121.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "k2247.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "k2662.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "k2924.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "k3323.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "kg0038.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "kg0045_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "kg0058_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "kg0060_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "kg0064_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "kg0090_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "kg0092_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "kg0095_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "kg0097_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "kg0105_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "kg0109.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "kg0127_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "kg0128_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "kg0134_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "kg0152_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "kg0154_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "kg0157_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "kg0167_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "kg1169.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v0003.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v0009.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v0028.tbm",
+        "Bi\u1ebfn th\u1ec3 TBM D1D38626 ch\u01b0a \u0111\u01b0\u1ee3c h\u1ed7 tr\u1ee3."
+      ],
+      [
+        "v0219.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v0243.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v0252.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v0368.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v0422.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v0508.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v0593.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v0599.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v0602.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v0882.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v1046.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v1239.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v1457.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v1463.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v1484.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v1491.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v1498.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v1531.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v1553.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v1554.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v1558.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v1567.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v1571.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v1589.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v1615.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v1717.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v1772.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v1833.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v1861.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v1883.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v2001.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v2005.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v2019.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v2049.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v2136.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v2170.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v2215.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v2311.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v2382.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v2395.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v2431.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v2468.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v2576.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v2617.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v2627.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v2736.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v2772.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v2842.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "v2854.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vg0012_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vg0024_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vg0048_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vg0065.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vg0081_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vg0130_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vg0131_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vg0179.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vg0231.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vg0315_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vg0325_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vg0332_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vg0349_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vg0381.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vg0405_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vg1316_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vng0011_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vng0027.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vng0032.tbm",
+        "T\u1ec7p kh\u00f4ng c\u00f3 ch\u1eef k\u00fd AuditionMusic."
+      ],
+      [
+        "vng0061_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vng0073_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vng0085.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vng0085_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vng0091_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vng0098_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vng0108_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vng0131_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vng0168_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vng0183_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vng0194_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vng0203.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vng0204_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vng0206_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vng0233_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vng0253.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vng0256.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vng0257_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vng0318_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vng0320_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vng0329_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vng0343.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vng0344.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vng0348_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vng0353.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vng0358_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ],
+      [
+        "vng0369_note.tbm",
+        "V\u1ecb tr\u00ed metadata TBM n\u1eb1m ngo\u00e0i ph\u1ea7n th\u00e2n."
+      ]
+    ]
+  },
+  "representative_rechecks": {
+    "k1106.tbm": {
+      "supported": true,
+      "profile": "Audition legacy k1106 server header",
+      "rate": 44100,
+      "seconds": 194.00272108843538
+    },
+    "kg0035.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q0",
+      "rate": 48000,
+      "seconds": 242.60870833333334
+    },
+    "kg0108.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q0",
+      "rate": 48000,
+      "seconds": 216.00002083333334
+    },
+    "kg0131.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q0",
+      "rate": 48000,
+      "seconds": 255.1296875
+    },
+    "kg0136.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 211.42858333333334
+    },
+    "kg0169.tbm": {
+      "supported": false,
+      "reason": "Ch\u01b0a c\u00f3 m\u1eabu codebook Vorbis kh\u1edbp b\u00e0i n\u00e0y. Kh\u00f4ng t\u1ea1o t\u1ec7p nh\u1ea1c \u0111o\u00e1n sai."
+    },
+    "v0847.tbm": {
+      "supported": false,
+      "reason": "Kh\u00f4ng t\u00ecm th\u1ea5y ph\u1ea7n OGG \u0111\u1ee7 d\u1eef li\u1ec7u \u0111\u1ec3 kh\u00f4i ph\u1ee5c header."
+    },
+    "v1019.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q2",
+      "rate": 48000,
+      "seconds": 204.504
+    },
+    "v1398.tbm": {
+      "supported": false,
+      "reason": "Kh\u00f4ng t\u00ecm th\u1ea5y ph\u1ea7n OGG \u0111\u1ee7 d\u1eef li\u1ec7u \u0111\u1ec3 kh\u00f4i ph\u1ee5c header."
+    },
+    "v1399.tbm": {
+      "supported": false,
+      "reason": "Kh\u00f4ng t\u00ecm th\u1ea5y ph\u1ea7n OGG \u0111\u1ee7 d\u1eef li\u1ec7u \u0111\u1ec3 kh\u00f4i ph\u1ee5c header."
+    },
+    "v1400.tbm": {
+      "supported": false,
+      "reason": "Kh\u00f4ng t\u00ecm th\u1ea5y ph\u1ea7n OGG \u0111\u1ee7 d\u1eef li\u1ec7u \u0111\u1ec3 kh\u00f4i ph\u1ee5c header."
+    },
+    "v1401.tbm": {
+      "supported": false,
+      "reason": "Ch\u01b0a c\u00f3 m\u1eabu codebook Vorbis kh\u1edbp b\u00e0i n\u00e0y. Kh\u00f4ng t\u1ea1o t\u1ec7p nh\u1ea1c \u0111o\u00e1n sai."
+    },
+    "v1402.tbm": {
+      "supported": false,
+      "reason": "Kh\u00f4ng t\u00ecm th\u1ea5y ph\u1ea7n OGG \u0111\u1ee7 d\u1eef li\u1ec7u \u0111\u1ec3 kh\u00f4i ph\u1ee5c header."
+    },
+    "v1404.tbm": {
+      "supported": false,
+      "reason": "Kh\u00f4ng t\u00ecm th\u1ea5y ph\u1ea7n OGG \u0111\u1ee7 d\u1eef li\u1ec7u \u0111\u1ec3 kh\u00f4i ph\u1ee5c header."
+    },
+    "v1407.tbm": {
+      "supported": false,
+      "reason": "Kh\u00f4ng t\u00ecm th\u1ea5y ph\u1ea7n OGG \u0111\u1ee7 d\u1eef li\u1ec7u \u0111\u1ec3 kh\u00f4i ph\u1ee5c header."
+    },
+    "v1467.tbm": {
+      "supported": false,
+      "reason": "Kh\u00f4ng t\u00ecm th\u1ea5y ph\u1ea7n OGG \u0111\u1ee7 d\u1eef li\u1ec7u \u0111\u1ec3 kh\u00f4i ph\u1ee5c header."
+    },
+    "v1489.tbm": {
+      "supported": false,
+      "reason": "Kh\u00f4ng t\u00ecm th\u1ea5y ph\u1ea7n OGG \u0111\u1ee7 d\u1eef li\u1ec7u \u0111\u1ec3 kh\u00f4i ph\u1ee5c header."
+    },
+    "v1525.tbm": {
+      "supported": false,
+      "reason": "Ch\u01b0a c\u00f3 m\u1eabu codebook Vorbis kh\u1edbp b\u00e0i n\u00e0y. Kh\u00f4ng t\u1ea1o t\u1ec7p nh\u1ea1c \u0111o\u00e1n sai."
+    },
+    "v1526.tbm": {
+      "supported": false,
+      "reason": "Ch\u01b0a c\u00f3 m\u1eabu codebook Vorbis kh\u1edbp b\u00e0i n\u00e0y. Kh\u00f4ng t\u1ea1o t\u1ec7p nh\u1ea1c \u0111o\u00e1n sai."
+    },
+    "v1552.tbm": {
+      "supported": false,
+      "reason": "Kh\u00f4ng t\u00ecm th\u1ea5y ph\u1ea7n OGG \u0111\u1ee7 d\u1eef li\u1ec7u \u0111\u1ec3 kh\u00f4i ph\u1ee5c header."
+    },
+    "v1607.tbm": {
+      "supported": true,
+      "profile": "Audition legacy k1106 server header",
+      "rate": 44100,
+      "seconds": 190.7983673469388
+    },
+    "v1686.tbm": {
+      "supported": false,
+      "reason": "Ch\u01b0a c\u00f3 m\u1eabu codebook Vorbis kh\u1edbp b\u00e0i n\u00e0y. Kh\u00f4ng t\u1ea1o t\u1ec7p nh\u1ea1c \u0111o\u00e1n sai."
+    },
+    "v1894.tbm": {
+      "supported": false,
+      "reason": "Ch\u01b0a c\u00f3 m\u1eabu codebook Vorbis kh\u1edbp b\u00e0i n\u00e0y. Kh\u00f4ng t\u1ea1o t\u1ec7p nh\u1ea1c \u0111o\u00e1n sai."
+    },
+    "v1896.tbm": {
+      "supported": false,
+      "reason": "Ch\u01b0a c\u00f3 m\u1eabu codebook Vorbis kh\u1edbp b\u00e0i n\u00e0y. Kh\u00f4ng t\u1ea1o t\u1ec7p nh\u1ea1c \u0111o\u00e1n sai."
+    },
+    "v1897.tbm": {
+      "supported": false,
+      "reason": "Ch\u01b0a c\u00f3 m\u1eabu codebook Vorbis kh\u1edbp b\u00e0i n\u00e0y. Kh\u00f4ng t\u1ea1o t\u1ec7p nh\u1ea1c \u0111o\u00e1n sai."
+    },
+    "v1902.tbm": {
+      "supported": false,
+      "reason": "Ch\u01b0a c\u00f3 m\u1eabu codebook Vorbis kh\u1edbp b\u00e0i n\u00e0y. Kh\u00f4ng t\u1ea1o t\u1ec7p nh\u1ea1c \u0111o\u00e1n sai."
+    },
+    "v1908.tbm": {
+      "supported": false,
+      "reason": "Ch\u01b0a c\u00f3 m\u1eabu codebook Vorbis kh\u1edbp b\u00e0i n\u00e0y. Kh\u00f4ng t\u1ea1o t\u1ec7p nh\u1ea1c \u0111o\u00e1n sai."
+    },
+    "v1921.tbm": {
+      "supported": false,
+      "reason": "Ch\u01b0a c\u00f3 m\u1eabu codebook Vorbis kh\u1edbp b\u00e0i n\u00e0y. Kh\u00f4ng t\u1ea1o t\u1ec7p nh\u1ea1c \u0111o\u00e1n sai."
+    },
+    "v1961.tbm": {
+      "supported": false,
+      "reason": "Ch\u01b0a c\u00f3 m\u1eabu codebook Vorbis kh\u1edbp b\u00e0i n\u00e0y. Kh\u00f4ng t\u1ea1o t\u1ec7p nh\u1ea1c \u0111o\u00e1n sai."
+    },
+    "v1986.tbm": {
+      "supported": false,
+      "reason": "Ch\u01b0a c\u00f3 m\u1eabu codebook Vorbis kh\u1edbp b\u00e0i n\u00e0y. Kh\u00f4ng t\u1ea1o t\u1ec7p nh\u1ea1c \u0111o\u00e1n sai."
+    },
+    "v2010.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q-1",
+      "rate": 48000,
+      "seconds": 207.504
+    },
+    "v2034.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 177.049
+    },
+    "v2051.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 209.09
+    },
+    "v2052.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 221.538
+    },
+    "v2061.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 208.301
+    },
+    "v2062.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 262.0
+    },
+    "v2065.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 191.578
+    },
+    "v2068.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 156.631
+    },
+    "v2074.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 189.818
+    },
+    "v2079.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 255.428
+    },
+    "v2081.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 236.799
+    },
+    "v2083.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 214.154
+    },
+    "v2084.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 232.941
+    },
+    "v2099.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 265.6
+    },
+    "v2107.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 289.032
+    },
+    "v2111.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 299.147
+    },
+    "v2121.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 280.0
+    },
+    "v2128.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 206.4
+    },
+    "v2130.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 208.8
+    },
+    "v2132.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 174.193
+    },
+    "v2146.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 214.4
+    },
+    "v2149.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 199.291
+    },
+    "v2152.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 256.907
+    },
+    "v2157.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 271.2
+    },
+    "v2159.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 223.448
+    },
+    "v2179.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 214.736
+    },
+    "v2188.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q-1",
+      "rate": 48000,
+      "seconds": 293.5685
+    },
+    "v2207.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 261.818
+    },
+    "v2208.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 225.6
+    },
+    "v2213.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 164.869
+    },
+    "v2216.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 203.076
+    },
+    "v2220.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 170.322
+    },
+    "v2231.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 205.09
+    },
+    "v2237.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 203.773
+    },
+    "v2238.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 253.043
+    },
+    "v2240.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 147.428
+    },
+    "v2241.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 264.0
+    },
+    "v2245.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 160.0
+    },
+    "v2246.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 293.142
+    },
+    "v2250.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 214.468
+    },
+    "v2253.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 240.0
+    },
+    "v2254.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 242.123
+    },
+    "v2256.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 267.692
+    },
+    "v2274.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 226.206
+    },
+    "v2290.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 202.909
+    },
+    "v2291.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 257.142
+    },
+    "v2294.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 190.099
+    },
+    "v2306.tbm": {
+      "supported": false,
+      "reason": "Ch\u01b0a c\u00f3 m\u1eabu codebook Vorbis kh\u1edbp b\u00e0i n\u00e0y. Kh\u00f4ng t\u1ea1o t\u1ec7p nh\u1ea1c \u0111o\u00e1n sai."
+    },
+    "v2308.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 290.0
+    },
+    "v2312.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q2",
+      "rate": 48000,
+      "seconds": 309.473
+    },
+    "v2321.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 155.076
+    },
+    "v2323.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 216.0
+    },
+    "v2350.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q-1",
+      "rate": 48000,
+      "seconds": 180.0
+    },
+    "v2351.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q-1",
+      "rate": 48000,
+      "seconds": 194.666
+    },
+    "v2358.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q-1",
+      "rate": 48000,
+      "seconds": 232.615
+    },
+    "v2370.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q-1",
+      "rate": 48000,
+      "seconds": 217.142
+    },
+    "v2373.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q-1",
+      "rate": 48000,
+      "seconds": 216.216
+    },
+    "v2389.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q-1",
+      "rate": 48000,
+      "seconds": 197.073
+    },
+    "v2398.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q-1",
+      "rate": 48000,
+      "seconds": 198.0
+    },
+    "v2399.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q-1",
+      "rate": 48000,
+      "seconds": 196.363
+    },
+    "v2401.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q-1",
+      "rate": 48000,
+      "seconds": 158.823
+    },
+    "v2421.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q-1",
+      "rate": 48000,
+      "seconds": 192.631
+    },
+    "v2432.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q-1",
+      "rate": 48000,
+      "seconds": 205.384
+    },
+    "v2439.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q-1",
+      "rate": 48000,
+      "seconds": 180.0
+    },
+    "v2442.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q-1",
+      "rate": 48000,
+      "seconds": 231.304
+    },
+    "v2453.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q-1",
+      "rate": 48000,
+      "seconds": 276.774
+    },
+    "v2514.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q2",
+      "rate": 48000,
+      "seconds": 227.076
+    },
+    "vg0040.tbm": {
+      "supported": false,
+      "reason": "Kh\u00f4ng t\u00ecm th\u1ea5y ph\u1ea7n OGG \u0111\u1ee7 d\u1eef li\u1ec7u \u0111\u1ec3 kh\u00f4i ph\u1ee5c header."
+    },
+    "vg0040_note.tbm": {
+      "supported": false,
+      "reason": "Kh\u00f4ng t\u00ecm th\u1ea5y ph\u1ea7n OGG \u0111\u1ee7 d\u1eef li\u1ec7u \u0111\u1ec3 kh\u00f4i ph\u1ee5c header."
+    },
+    "vg0049.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 214.892
+    },
+    "k0344.tbm": {
+      "supported": true,
+      "profile": "template-2-0",
+      "rate": 44100,
+      "seconds": 270.06913832199547
+    },
+    "k0347.tbm": {
+      "supported": true,
+      "profile": "template-2-0",
+      "rate": 44100,
+      "seconds": 246.93170068027212
+    },
+    "k0723.tbm": {
+      "supported": true,
+      "profile": "template-2-0",
+      "rate": 44100,
+      "seconds": 216.92308390022677
+    },
+    "k0806.tbm": {
+      "supported": true,
+      "profile": "template-2-0",
+      "rate": 44100,
+      "seconds": 211.89190476190475
+    },
+    "k1013.tbm": {
+      "supported": false,
+      "reason": "Bi\u1ebfn th\u1ec3 TBM F96FB038 ch\u01b0a \u0111\u01b0\u1ee3c h\u1ed7 tr\u1ee3."
+    },
+    "k1121.tbm": {
+      "supported": true,
+      "profile": "Audition legacy k1001 server header",
+      "rate": 44100,
+      "seconds": 188.31383219954648
+    },
+    "k2247.tbm": {
+      "supported": true,
+      "profile": "template-2-0",
+      "rate": 44100,
+      "seconds": 224.00002267573697
+    },
+    "k2662.tbm": {
+      "supported": true,
+      "profile": "template-2-0",
+      "rate": 44100,
+      "seconds": 208.12501133786847
+    },
+    "k2924.tbm": {
+      "supported": true,
+      "profile": "Audition legacy k1001 server header",
+      "rate": 44100,
+      "seconds": 202.50122448979593
+    },
+    "k3323.tbm": {
+      "supported": true,
+      "profile": "Audition legacy k1001 server header",
+      "rate": 44100,
+      "seconds": 195.001179138322
+    },
+    "kg0038.tbm": {
+      "supported": true,
+      "profile": "template-2-0",
+      "rate": 44100,
+      "seconds": 225.7894784580499
+    },
+    "kg0045_note.tbm": {
+      "supported": true,
+      "profile": "template-2-0",
+      "rate": 44100,
+      "seconds": 177.39131519274378
+    },
+    "kg0058_note.tbm": {
+      "supported": true,
+      "profile": "template-2-0",
+      "rate": 44100,
+      "seconds": 221.33301587301588
+    },
+    "kg0060_note.tbm": {
+      "supported": true,
+      "profile": "template-2-0",
+      "rate": 44100,
+      "seconds": 234.62687074829932
+    },
+    "kg0064_note.tbm": {
+      "supported": true,
+      "profile": "template-2-0",
+      "rate": 44100,
+      "seconds": 193.91995464852607
+    },
+    "kg0090_note.tbm": {
+      "supported": true,
+      "profile": "template-2-0",
+      "rate": 44100,
+      "seconds": 212.90321995464853
+    },
+    "kg0092_note.tbm": {
+      "supported": true,
+      "profile": "template-2-0",
+      "rate": 44100,
+      "seconds": 190.0
+    },
+    "kg0095_note.tbm": {
+      "supported": true,
+      "profile": "template-2-0",
+      "rate": 44100,
+      "seconds": 180.0
+    },
+    "kg0097_note.tbm": {
+      "supported": true,
+      "profile": "template-2-0",
+      "rate": 44100,
+      "seconds": 183.15791383219954
+    },
+    "kg0105_note.tbm": {
+      "supported": true,
+      "profile": "template-2-0",
+      "rate": 44100,
+      "seconds": 226.0
+    },
+    "kg0109.tbm": {
+      "supported": true,
+      "profile": "template-2-0",
+      "rate": 44100,
+      "seconds": 192.00002267573697
+    },
+    "kg0127_note.tbm": {
+      "supported": true,
+      "profile": "template-2-0",
+      "rate": 44100,
+      "seconds": 224.47061224489795
+    },
+    "kg0128_note.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q0",
+      "rate": 48000,
+      "seconds": 204.8114375
+    },
+    "kg0134_note.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q0",
+      "rate": 48000,
+      "seconds": 210.52633333333333
+    },
+    "kg0152_note.tbm": {
+      "supported": true,
+      "profile": "template-2-0",
+      "rate": 44100,
+      "seconds": 211.03448979591838
+    },
+    "kg0154_note.tbm": {
+      "supported": true,
+      "profile": "template-2-0",
+      "rate": 44100,
+      "seconds": 211.03448979591838
+    },
+    "kg0157_note.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q0",
+      "rate": 48000,
+      "seconds": 204.0
+    },
+    "kg0167_note.tbm": {
+      "supported": true,
+      "profile": "template-2-4",
+      "rate": 44100,
+      "seconds": 172.13795918367347
+    },
+    "kg1169.tbm": {
+      "supported": true,
+      "profile": "template-2-4",
+      "rate": 44100,
+      "seconds": 228.6792290249433
+    },
+    "v0003.tbm": {
+      "supported": true,
+      "profile": "template-2-0",
+      "rate": 44100,
+      "seconds": 224.6516553287982
+    },
+    "v0009.tbm": {
+      "supported": true,
+      "profile": "template-2-0",
+      "rate": 44100,
+      "seconds": 272.00603174603174
+    },
+    "v0028.tbm": {
+      "supported": true,
+      "profile": "template-2-0",
+      "rate": 44100,
+      "seconds": 315.4838775510204
+    },
+    "v0219.tbm": {
+      "supported": true,
+      "profile": "template-2-0",
+      "rate": 44100,
+      "seconds": 195.84
+    },
+    "v0243.tbm": {
+      "supported": true,
+      "profile": "template-2-0",
+      "rate": 44100,
+      "seconds": 253.6739455782313
+    },
+    "v0252.tbm": {
+      "supported": true,
+      "profile": "template-2-0",
+      "rate": 44100,
+      "seconds": 280.80972789115646
+    },
+    "v0368.tbm": {
+      "supported": true,
+      "profile": "template-2-0",
+      "rate": 44100,
+      "seconds": 230.40002267573695
+    },
+    "v0422.tbm": {
+      "supported": true,
+      "profile": "Audition legacy k1001 server header",
+      "rate": 44100,
+      "seconds": 225.88371882086167
+    },
+    "v0508.tbm": {
+      "supported": true,
+      "profile": "Audition legacy k1001 server header",
+      "rate": 44100,
+      "seconds": 215.43473922902496
+    },
+    "v0593.tbm": {
+      "supported": true,
+      "profile": "Audition legacy k1001 server header",
+      "rate": 44100,
+      "seconds": 196.18539682539682
+    },
+    "v0599.tbm": {
+      "supported": true,
+      "profile": "Audition legacy k1001 server header",
+      "rate": 44100,
+      "seconds": 188.08163265306123
+    },
+    "v0602.tbm": {
+      "supported": true,
+      "profile": "Audition legacy k1001 server header",
+      "rate": 44100,
+      "seconds": 210.8604081632653
+    },
+    "v0882.tbm": {
+      "supported": true,
+      "profile": "template-2-2",
+      "rate": 44100,
+      "seconds": 208.00002267573697
+    },
+    "v1046.tbm": {
+      "supported": true,
+      "profile": "template-2-2",
+      "rate": 44100,
+      "seconds": 202.5
+    },
+    "v1239.tbm": {
+      "supported": true,
+      "profile": "template-2-2",
+      "rate": 44100,
+      "seconds": 248.00002267573697
+    },
+    "v1457.tbm": {
+      "supported": true,
+      "profile": "Audition legacy k1001 server header",
+      "rate": 44100,
+      "seconds": 222.09886621315192
+    },
+    "v1463.tbm": {
+      "supported": true,
+      "profile": "Audition legacy k1001 server header",
+      "rate": 44100,
+      "seconds": 238.12063492063493
+    },
+    "v1484.tbm": {
+      "supported": true,
+      "profile": "Audition legacy k1001 server header",
+      "rate": 44100,
+      "seconds": 205.84489795918367
+    },
+    "v1491.tbm": {
+      "supported": true,
+      "profile": "Audition legacy k1001 server header",
+      "rate": 44100,
+      "seconds": 274.5063038548753
+    },
+    "v1498.tbm": {
+      "supported": true,
+      "profile": "Audition legacy k1001 server header",
+      "rate": 44100,
+      "seconds": 205.19473922902495
+    },
+    "v1531.tbm": {
+      "supported": true,
+      "profile": "Audition legacy k1001 server header",
+      "rate": 44100,
+      "seconds": 203.0120634920635
+    },
+    "v1553.tbm": {
+      "supported": true,
+      "profile": "Audition legacy k1001 server header",
+      "rate": 44100,
+      "seconds": 213.7861224489796
+    },
+    "v1554.tbm": {
+      "supported": true,
+      "profile": "Audition legacy k1001 server header",
+      "rate": 44100,
+      "seconds": 230.45804988662132
+    },
+    "v1558.tbm": {
+      "supported": true,
+      "profile": "Audition legacy k1001 server header",
+      "rate": 44100,
+      "seconds": 265.1486621315193
+    },
+    "v1567.tbm": {
+      "supported": true,
+      "profile": "Audition legacy k1001 server header",
+      "rate": 44100,
+      "seconds": 272.5558276643991
+    },
+    "v1571.tbm": {
+      "supported": true,
+      "profile": "Audition legacy k1001 server header",
+      "rate": 44100,
+      "seconds": 169.66820861678005
+    },
+    "v1589.tbm": {
+      "supported": true,
+      "profile": "Audition legacy k1001 server header",
+      "rate": 44100,
+      "seconds": 249.26621315192745
+    },
+    "v1615.tbm": {
+      "supported": true,
+      "profile": "Audition legacy k1001 server header",
+      "rate": 44100,
+      "seconds": 186.57233560090702
+    },
+    "v1717.tbm": {
+      "supported": true,
+      "profile": "template-2-0",
+      "rate": 44100,
+      "seconds": 36.075102040816326
+    },
+    "v1772.tbm": {
+      "supported": true,
+      "profile": "Audition legacy k1001 server header",
+      "rate": 44100,
+      "seconds": 185.3881179138322
+    },
+    "v1833.tbm": {
+      "supported": true,
+      "profile": "Audition legacy k1001 server header",
+      "rate": 44100,
+      "seconds": 205.28761904761905
+    },
+    "v1861.tbm": {
+      "supported": true,
+      "profile": "Audition legacy k1001 server header",
+      "rate": 44100,
+      "seconds": 198.6467120181406
+    },
+    "v1883.tbm": {
+      "supported": true,
+      "profile": "Audition legacy k1001 server header",
+      "rate": 44100,
+      "seconds": 225.28
+    },
+    "v2001.tbm": {
+      "supported": true,
+      "profile": "template-2--1",
+      "rate": 44100,
+      "seconds": 198.0081632653061
+    },
+    "v2005.tbm": {
+      "supported": true,
+      "profile": "template-2--1",
+      "rate": 44100,
+      "seconds": 270.6024489795918
+    },
+    "v2019.tbm": {
+      "supported": true,
+      "profile": "template-2-0",
+      "rate": 44100,
+      "seconds": 214.6742857142857
+    },
+    "v2049.tbm": {
+      "supported": true,
+      "profile": "template-2-4",
+      "rate": 44100,
+      "seconds": 175.38399092970522
+    },
+    "v2136.tbm": {
+      "supported": true,
+      "profile": "template-2-4",
+      "rate": 44100,
+      "seconds": 237.1419954648526
+    },
+    "v2170.tbm": {
+      "supported": true,
+      "profile": "template-2-4",
+      "rate": 44100,
+      "seconds": 182.1419954648526
+    },
+    "v2215.tbm": {
+      "supported": true,
+      "profile": "template-2-4",
+      "rate": 44100,
+      "seconds": 160.60299319727892
+    },
+    "v2311.tbm": {
+      "supported": true,
+      "profile": "template-2-2",
+      "rate": 44100,
+      "seconds": 309.3509750566893
+    },
+    "v2382.tbm": {
+      "supported": true,
+      "profile": "template-2--1",
+      "rate": 44100,
+      "seconds": 318.75
+    },
+    "v2395.tbm": {
+      "supported": true,
+      "profile": "template-2--1",
+      "rate": 44100,
+      "seconds": 175.67
+    },
+    "v2431.tbm": {
+      "supported": true,
+      "profile": "template-2--1",
+      "rate": 44100,
+      "seconds": 232.8
+    },
+    "v2468.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q-1",
+      "rate": 48000,
+      "seconds": 260.869
+    },
+    "v2576.tbm": {
+      "supported": true,
+      "profile": "template-2-2",
+      "rate": 44100,
+      "seconds": 168.0
+    },
+    "v2617.tbm": {
+      "supported": true,
+      "profile": "template-2-2",
+      "rate": 44100,
+      "seconds": 126.7919954648526
+    },
+    "v2627.tbm": {
+      "supported": true,
+      "profile": "template-2-2",
+      "rate": 44100,
+      "seconds": 199.0239909297052
+    },
+    "v2736.tbm": {
+      "supported": true,
+      "profile": "template-2-2",
+      "rate": 44100,
+      "seconds": 211.76299319727892
+    },
+    "v2772.tbm": {
+      "supported": true,
+      "profile": "template-2--1",
+      "rate": 44100,
+      "seconds": 213.95099773242632
+    },
+    "v2842.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q2",
+      "rate": 48000,
+      "seconds": 213.722
+    },
+    "v2854.tbm": {
+      "supported": true,
+      "profile": "template-2-2",
+      "rate": 44100,
+      "seconds": 238.15297052154196
+    },
+    "vg0012_note.tbm": {
+      "supported": false,
+      "reason": "Ch\u01b0a c\u00f3 m\u1eabu codebook Vorbis kh\u1edbp b\u00e0i n\u00e0y. Kh\u00f4ng t\u1ea1o t\u1ec7p nh\u1ea1c \u0111o\u00e1n sai."
+    },
+    "vg0024_note.tbm": {
+      "supported": true,
+      "profile": "template-2-4",
+      "rate": 44100,
+      "seconds": 211.03759637188207
+    },
+    "vg0048_note.tbm": {
+      "supported": false,
+      "reason": "Kh\u00f4ng t\u00ecm th\u1ea5y ph\u1ea7n OGG \u0111\u1ee7 d\u1eef li\u1ec7u \u0111\u1ec3 kh\u00f4i ph\u1ee5c header."
+    },
+    "vg0065.tbm": {
+      "supported": false,
+      "reason": "Ch\u01b0a c\u00f3 m\u1eabu codebook Vorbis kh\u1edbp b\u00e0i n\u00e0y. Kh\u00f4ng t\u1ea1o t\u1ec7p nh\u1ea1c \u0111o\u00e1n sai."
+    },
+    "vg0120.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q4",
+      "rate": 48000,
+      "seconds": 204.22729166666667
+    },
+    "vng0033.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q2",
+      "rate": 48000,
+      "seconds": 288.0
+    },
+    "vg0081_note.tbm": {
+      "supported": true,
+      "profile": "template-2-4",
+      "rate": 44100,
+      "seconds": 268.3776870748299
+    },
+    "vg0130_note.tbm": {
+      "supported": false,
+      "reason": "Ch\u01b0a c\u00f3 m\u1eabu codebook Vorbis kh\u1edbp b\u00e0i n\u00e0y. Kh\u00f4ng t\u1ea1o t\u1ec7p nh\u1ea1c \u0111o\u00e1n sai."
+    },
+    "vg0131_note.tbm": {
+      "supported": false,
+      "reason": "Ch\u01b0a c\u00f3 m\u1eabu codebook Vorbis kh\u1edbp b\u00e0i n\u00e0y. Kh\u00f4ng t\u1ea1o t\u1ec7p nh\u1ea1c \u0111o\u00e1n sai."
+    },
+    "vg0179.tbm": {
+      "supported": true,
+      "profile": "template-2--1",
+      "rate": 44100,
+      "seconds": 82.82061224489796
+    },
+    "vg0231.tbm": {
+      "supported": true,
+      "profile": "template-2-2",
+      "rate": 44100,
+      "seconds": 224.9709977324263
+    },
+    "vg0315_note.tbm": {
+      "supported": true,
+      "profile": "template-2-2",
+      "rate": 44100,
+      "seconds": 245.07
+    },
+    "vg0325_note.tbm": {
+      "supported": false,
+      "reason": "Ch\u01b0a c\u00f3 m\u1eabu codebook Vorbis kh\u1edbp b\u00e0i n\u00e0y. Kh\u00f4ng t\u1ea1o t\u1ec7p nh\u1ea1c \u0111o\u00e1n sai."
+    },
+    "vg0332_note.tbm": {
+      "supported": true,
+      "profile": "template-2-2",
+      "rate": 44100,
+      "seconds": 196.00251700680272
+    },
+    "vg0349_note.tbm": {
+      "supported": true,
+      "profile": "template-2--1",
+      "rate": 44100,
+      "seconds": 200.0
+    },
+    "vg0381.tbm": {
+      "supported": true,
+      "profile": "template-2-2",
+      "rate": 44100,
+      "seconds": 228.0
+    },
+    "vg0405_note.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q2",
+      "rate": 48000,
+      "seconds": 213.818
+    },
+    "vg1316_note.tbm": {
+      "supported": true,
+      "profile": "template-2--1",
+      "rate": 44100,
+      "seconds": 204.74485260770976
+    },
+    "vng0011_note.tbm": {
+      "supported": true,
+      "profile": "template-2--1",
+      "rate": 44100,
+      "seconds": 182.98621315192744
+    },
+    "vng0027.tbm": {
+      "supported": false,
+      "reason": "Ch\u01b0a c\u00f3 m\u1eabu codebook Vorbis kh\u1edbp b\u00e0i n\u00e0y. Kh\u00f4ng t\u1ea1o t\u1ec7p nh\u1ea1c \u0111o\u00e1n sai."
+    },
+    "vng0032.tbm": {
+      "supported": false,
+      "reason": "T\u1ec7p kh\u00f4ng c\u00f3 ch\u1eef k\u00fd AuditionMusic."
+    },
+    "vng0088.tbm": {
+      "supported": true,
+      "profile": "libvorbis-32000-2-q4",
+      "rate": 32000,
+      "seconds": 233.126
+    },
+    "vng0061_note.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q2",
+      "rate": 48000,
+      "seconds": 248.571
+    },
+    "vng0073_note.tbm": {
+      "supported": true,
+      "profile": "template-2-2",
+      "rate": 44100,
+      "seconds": 192.70700680272108
+    },
+    "vng0085.tbm": {
+      "supported": true,
+      "profile": "template-2-2",
+      "rate": 44100,
+      "seconds": 309.0038321995465
+    },
+    "vng0085_note.tbm": {
+      "supported": true,
+      "profile": "template-2-2",
+      "rate": 44100,
+      "seconds": 309.0038321995465
+    },
+    "vng0091_note.tbm": {
+      "supported": false,
+      "reason": "Ch\u01b0a c\u00f3 m\u1eabu codebook Vorbis kh\u1edbp b\u00e0i n\u00e0y. Kh\u00f4ng t\u1ea1o t\u1ec7p nh\u1ea1c \u0111o\u00e1n sai."
+    },
+    "vng0119_note.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-1-q4",
+      "rate": 48000,
+      "seconds": 303.33
+    },
+    "vng0098_note.tbm": {
+      "supported": false,
+      "reason": "Ch\u01b0a c\u00f3 m\u1eabu codebook Vorbis kh\u1edbp b\u00e0i n\u00e0y. Kh\u00f4ng t\u1ea1o t\u1ec7p nh\u1ea1c \u0111o\u00e1n sai."
+    },
+    "vng0108_note.tbm": {
+      "supported": true,
+      "profile": "template-2-2",
+      "rate": 44100,
+      "seconds": 272.7269841269841
+    },
+    "vng0131_note.tbm": {
+      "supported": true,
+      "profile": "template-2-2",
+      "rate": 44100,
+      "seconds": 165.98097505668935
+    },
+    "vng0168_note.tbm": {
+      "supported": true,
+      "profile": "template-2-2",
+      "rate": 44100,
+      "seconds": 269.21698412698413
+    },
+    "vng0183_note.tbm": {
+      "supported": true,
+      "profile": "template-2-2",
+      "rate": 44100,
+      "seconds": 174.54498866213152
+    },
+    "vng0194_note.tbm": {
+      "supported": true,
+      "profile": "template-2-2",
+      "rate": 44100,
+      "seconds": 209.99997732426303
+    },
+    "vng0222.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q2",
+      "rate": 48000,
+      "seconds": 146.6486875
+    },
+    "vng0203.tbm": {
+      "supported": true,
+      "profile": "template-2-2",
+      "rate": 44100,
+      "seconds": 221.53798185941042
+    },
+    "vng0204_note.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q-1",
+      "rate": 48000,
+      "seconds": 150.2135
+    },
+    "vng0206_note.tbm": {
+      "supported": true,
+      "profile": "template-2-2",
+      "rate": 44100,
+      "seconds": 101.31897959183674
+    },
+    "vng0233_note.tbm": {
+      "supported": true,
+      "profile": "template-2-2",
+      "rate": 44100,
+      "seconds": 186.16866213151928
+    },
+    "vng0253.tbm": {
+      "supported": true,
+      "profile": "template-2-2",
+      "rate": 44100,
+      "seconds": 271.3039909297052
+    },
+    "vng0256.tbm": {
+      "supported": true,
+      "profile": "template-2-4",
+      "rate": 44100,
+      "seconds": 244.2724716553288
+    },
+    "vng0257_note.tbm": {
+      "supported": true,
+      "profile": "template-2-2",
+      "rate": 44100,
+      "seconds": 185.80598639455783
+    },
+    "vng0324.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q2",
+      "rate": 48000,
+      "seconds": 201.57183333333333
+    },
+    "vng0324_note.tbm": {
+      "supported": true,
+      "profile": "libvorbis-48000-2-q1",
+      "rate": 48000,
+      "seconds": 201.57183333333333
+    },
+    "vng0318_note.tbm": {
+      "supported": true,
+      "profile": "template-2-2",
+      "rate": 44100,
+      "seconds": 157.41897959183675
+    },
+    "vng0320_note.tbm": {
+      "supported": true,
+      "profile": "template-2-2",
+      "rate": 44100,
+      "seconds": 222.58097505668934
+    },
+    "vng0329_note.tbm": {
+      "supported": true,
+      "profile": "template-2-2",
+      "rate": 44100,
+      "seconds": 168.74997732426303
+    },
+    "vng0343.tbm": {
+      "supported": true,
+      "profile": "template-2-2",
+      "rate": 44100,
+      "seconds": 203.58598639455784
+    },
+    "vng0344.tbm": {
+      "supported": true,
+      "profile": "template-2-2",
+      "rate": 44100,
+      "seconds": 218.76097505668935
+    },
+    "vng0348_note.tbm": {
+      "supported": true,
+      "profile": "template-2-2",
+      "rate": 44100,
+      "seconds": 212.9029931972789
+    },
+    "vng0353.tbm": {
+      "supported": true,
+      "profile": "template-2--1",
+      "rate": 44100,
+      "seconds": 342.37718820861676
+    },
+    "vng0358_note.tbm": {
+      "supported": true,
+      "profile": "template-2-2",
+      "rate": 44100,
+      "seconds": 271.00997732426305
+    },
+    "vng0369_note.tbm": {
+      "supported": true,
+      "profile": "template-2-2",
+      "rate": 44100,
+      "seconds": 265.71399092970523
+    }
+  }
+}

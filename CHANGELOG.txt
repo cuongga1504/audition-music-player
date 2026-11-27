@@ -1,0 +1,42 @@
+27/11/2026 — Tự chuyển bài
+
+- Tự phát bài kế tiếp khi bài hiện tại kết thúc, bật sẵn.
+- Theo thứ tự danh sách đang hiển thị; dừng ở bài cuối, không tự lặp lại.
+- Có checkbox để bật/tắt tự chuyển bài.
+- Nhấn Dừng không chuyển bài và hủy yêu cầu phát đang chờ tải.
+- Tạm dừng không kích hoạt chuyển bài; chờ tác vụ xuất tệp hoàn tất nếu cần.
+27/11/2026 — Nhận file nhạc cập nhật
+
+- Chỉ giải mã khi cần nghe/xuất từng bài.
+- Tự làm mới thư mục nhạc mỗi 3 giây, nhận file thêm/xóa/thay đổi.
+- Kiểm tra lại danh sách trước khi tự chuyển bài.
+- Không dùng âm thanh cache cũ khi file nguồn đã được cập nhật.
+- Kiểm tra SHA-256 khi dùng cache để nhận cả cập nhật giữ nguyên timestamp.
+- Nếu file thay đổi giữa lúc giải mã, thử đọc lại tối đa 3 lần.
+
+
+27/11/2026 — Sửa lỗi codebook ở thư viện mở rộng
+- Thêm header Vorbis đời 2002/2003/2005 đã kiểm chứng CRC và các mẫu 48 kHz.
+- Đọc được TBM cũ dùng trailer 12 byte, không hoán vị.
+- Hiện tên file trong hộp thoại lỗi khi nghe/xuất nhạc.
+- Giữ kiểm tra codebook, checksum zlib và CRC OGG; từ chối dữ liệu chưa xác định.
+- Xử lý metadata lưu liên tiếp khi vị trí hoán vị nằm trước đầu tệp.
+
+27/11/2026 — Tên bài hát và ca sĩ
+- Ghép tên bài/ca sĩ theo tên file từ 852 bản ghi đã trích từ game.
+- Hiện tên file nếu chưa có tên bài; giữ cột tên file để đối chiếu.
+- Tên bài/ca sĩ hiển thị cả trong danh sách và bài đang phát.
+- Tìm theo tên bài có/không dấu, ca sĩ hoặc tên file.
+- Đóng gói bảng tên vào EXE; cho phép thay bảng song_metadata.json bên cạnh.
+
+27/11/2026 — Giao diện trình phát nhạc
+- Bố cục thư viện / bài đang phát / thanh điều khiển cố định.
+- Tông navy, thư viện sáng, trạng thái và dòng bài đang phát rõ hơn.
+- Nút Bài trước/Bài sau hoạt động theo danh sách hiện tại; Ctrl+F tìm kiếm.
+- Hiển thị cột Ngày sửa đổi (Date Modified) theo giờ Việt Nam và cập nhật tự động.
+- Cuộn ngang danh sách và hình đĩa co giãn khi cửa sổ thay đổi kích thước.
+
+27/11/2026 — Hiệu ứng đĩa nhạc
+- Đĩa quay theo chiều kim đồng hồ khi đang phát.
+- Tạm dừng/dừng/hết bài: giữ nguyên góc quay. Tiếp tục phát: quay tiếp.
+- Giữ hình đĩa khi thay kích thước cửa sổ; không dựng lại toàn bộ mỗi khung hình.

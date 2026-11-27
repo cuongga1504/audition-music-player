@@ -1,0 +1,91 @@
+CẬP NHẬT HIỆU ỨNG ĐĨA NHẠC — 27/11/2026
+- Kiểm tra Canvas Tk: đứng yên khi chưa phát, quay khi phát, giữ góc khi
+  tạm dừng, quay tiếp khi tiếp tục, đứng yên khi dừng và hết bài.
+- Hoạt ảnh chỉ cập nhật dấu phản chiếu/nhãn trên đĩa ở khoảng 30 fps khi phát.
+- Các kiểm tra tự chuyển bài/cache/cập nhật thư mục vẫn qua.
+
+CẬP NHẬT GIAO DIỆN / DATE MODIFIED — 27/11/2026
+- Kiểm tra hình học Tk ở 1280x800 và 1080x680: các nút hiển thị đầy đủ.
+- Kiểm tra tên bài/ca sĩ trong danh sách và trạng thái hiện tại.
+- Kiểm tra nút Bài sau/Bài trước: đúng file gốc kể cả khi hiện tên bài.
+- Kiểm tra Date Modified: 10:34 UTC hiển thị 17:34 giờ Việt Nam.
+- Khi cập nhật mtime của file, ngày giờ trong danh sách tự đổi sau lần quét.
+- Các kiểm tra tự chuyển bài/cache/thay đổi thư mục vẫn qua.
+- Công cụ chụp màn hình Windows bị giới hạn truy cập trong lượt này;
+  kiểm tra bố cục dựa trên kích thước/vị trí widget Tk thực tế.
+
+CẬP NHẬT TÊN BÀI/CA SĨ — 27/11/2026
+- Kiểm tra Tk thực tế: v0042.tbm hiện Tuyết yêu thương (Remix) / Young Uno.
+- v3585.tbm chưa có dữ liệu: hiện đúng tên file, ca sĩ trống.
+- Tìm kiếm tên không dấu, ca sĩ và mã file trả về đúng file gốc.
+- Bảng rỗng/không có thông tin vẫn trả về tên file.
+- 13 kiểm tra tự chuyển bài/cache/cập nhật thư mục tiếp tục qua.
+- Dữ liệu ghép tên độc lập với giải mã; không sửa tệp game hoặc âm thanh.
+
+CẬP NHẬT SỬA CODEBOOK — 27/11/2026
+- 16 file đại diện đời cũ/mới đã qua kiểm tra toàn bộ CRC OGG và giải mã
+  toàn bộ bằng FFmpeg -xerror. Chi tiết: legacy-validation.json.
+- Xác minh CRC header gốc từ THD trước khi thêm mẫu Vorbis đời cũ.
+- Đã xuất MP3 k0005.tbm bằng EXE mới: exit 0, stereo 44.100 Hz, 221,87 giây.
+- 13 kiểm tra tự chuyển bài/cache/nhận cập nhật tiếp tục qua.
+- Khi có lỗi, hộp thoại hiển thị tên tệp đang được xử lý.
+- Thêm nhánh metadata dự phòng theo cursor tệp khi offset âm, khớp mã native.
+- Kiểm tra lại 234 file đại diện/lỗi: 197 khôi phục OGG thành công, 37 còn lỗi.
+  Các con số này thuộc tập kiểm tra đại diện, không phải toàn bộ thư viện.
+- Toàn bộ 5.585 container đã được đọc để lập nhóm header. Xem
+  library-header-check.json để biết phương pháp, nhóm và các file đại diện.
+- Thư viện hiện có 5.585 file; kiểm tra nhóm header không tương đương kiểm tra
+  giải mã toàn bộ từng bài. Một số codebook khác vẫn chưa hỗ trợ.
+
+KIỂM TRA BẢN HOÀN THIỆN — 27/11/2026
+
+Cập nhật thư mục và giải mã khi phát:
+- 13 kiểm tra đã qua, gồm các kiểm tra tự chuyển bài trước đó.
+- Thêm file khi bài đang phát: bài mới được nhận ngay trước khi chuyển bài.
+- Tự cập nhật danh sách sau 3 giây mà không gọi bộ giải mã.
+- File bị thay nội dung được giải mã lại; kể cả khi giữ nguyên dung lượng
+  và thời gian sửa. Cache kiểm tra SHA-256 của file khi cần phát/xuất.
+- Không lưu cache khi file bị thay đổi giữa lúc giải mã.
+- Bản EXE cập nhật vẫn xuất OGG thực tế khớp SHA-256 đã xác nhận.
+
+Cập nhật tự chuyển bài:
+- 7 kiểm tra đã qua, gồm kiểm tra giao diện phát hai bài liên tiếp và dừng
+  ở cuối danh sách; tắt checkbox; nhấn Dừng; dừng trong lúc đang tải bài.
+- Kiểm tra MCI thật bằng WAV im lặng xác nhận nhận biết kết thúc tự nhiên
+  đúng một lần, không nhầm với tạm dừng hoặc thao tác Dừng.
+- Bản EXE cập nhật xuất OGG có SHA-256 trùng bản đã xác nhận trước đó.
+
+Tập đầu vào ban đầu (trước khi thư viện mở rộng): 84 tệp TBM trong D:\Audition\abm.
+Kết quả: 84/84 giải mã thành công và được FFmpeg giải mã toàn bộ không lỗi.
+Mỗi tệp được kiểm tra EOF/checksum zlib, kích thước giải nén, số thứ tự và
+CRC của tất cả các trang OGG, và trang kết thúc luồng.
+
+82 tệp khớp mẫu codebook libvorbis stereo q2.
+2 tệp khớp mẫu codebook libvorbis stereo q1.
+Không tệp nào trong tập này cần thay các byte hỏng ở phần setup còn lại.
+Biên bản từng tệp, SHA-256 và thông số có trong validation.json.
+
+v3585.tbm:
+- SHA-256: 8461320db77e2f8822b1cd1cdc581fcb9c85cf30ac662f85988bceca7c881080
+- Âm thanh Vorbis, 44.100 Hz, stereo; 218,18 giây.
+- 1.460 byte setup còn lại khớp mẫu q2.
+- MP3 đã xuất và được FFmpeg giải mã lại không lỗi.
+
+Kiểm tra lỗi:
+- Từ chối đầu vào bị cắt ngắn hoặc sai chữ ký.
+- Từ chối ciphertext/zlib bị thay đổi.
+- Từ chối âm thanh có CRC OGG sai.
+- Từ chối codebook không khớp hoặc có nhiều cách khôi phục không phân biệt được.
+- Không ghi đè tệp có sẵn; không để lại MP3 xuất dở khi chuyển đổi lỗi.
+
+Kiểm tra chương trình:
+- Windows MCI: mở WAV, phát, tạm dừng, tiếp tục, dừng và đóng đã qua.
+- Bản EXE xuất MP3 thành công, exit code 0.
+- Bản EXE cuối xuất OGG thành công, exit code 0; SHA-256 trùng bản chạy từ mã nguồn.
+- Giao diện EXE đã mở và kiểm tra trực quan đủ danh sách/nút/trạng thái.
+
+Giới hạn:
+Header OGG được dựng lại; không tuyên bố OGG xuất ra giống byte-for-byte
+với OGG gốc trước khi game đóng gói. Các trang âm thanh từ sequence 2 đến
+trang kết thúc được giữ nguyên. Kiểm tra không bao quát mọi phiên bản TBM.
+Nhánh FF01FF1A, ABM và trailer cố định đã được kiểm chứng trong lượt bổ sung. Không tiến trình Audition.exe nào được khởi động để giải mã.
